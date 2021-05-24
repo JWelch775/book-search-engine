@@ -4,7 +4,7 @@ const { authMiddleware } = require('./utils/auth');
 
 const path = require('path');
 const db = require('./config/connection');
-const routes = require('./routes');
+//const routes = require('./routes');
 
 //import the typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
@@ -36,7 +36,7 @@ app.get('*', (req, res) => {
 });
 
 
-app.use(routes);
+//app.use(routes);
 
 db.once('open', () => {
   app.listen(PORT, () => {

@@ -7,7 +7,7 @@ const db = require('./config/connection');
 const {authMiddleware} = require('./utils/auth');
 
 const path = require('path');
-//const routes = require('./routes');
+const routes = require('./routes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
